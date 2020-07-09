@@ -1,0 +1,6 @@
+测试PrintStream
+我是qizidog
+
+重定向到print.txt
+
+这是PrintWriter

@@ -1,0 +1,15 @@
+ -= len;
+            } else {
+                System.out.println(new String(flush, 0, actualSize));
+                break;
+            }
+        }
+        randf.close();  // 切记关闭流
+    }
+    
+    public static void access3() throws IOException {
+        // 分块读取
+        File file = new File("src/learnIO/print.txt");
+        RandomAccessFile raf = new RandomAccessFile(file, "rw");
+        int blockSize = 20;  // 块大小
+    

@@ -1,0 +1,14 @@
+RandomAccessFile(new File("src/learnIO/print.txt"), "r");
+        randf.seek(9); // 指定起始位置，读取剩余全部内容
+        
+        byte[] flush = new byte[1024];
+        int len=-1;
+        while((len=randf.read(flush))!=-1) {
+            System.out.println(new String(flush, 0, len));
+        }
+        randf.close();  // 切记关闭流
+    }
+    
+    public static void access2() throws IOException {
+        // 读取指定区块的内容
+    

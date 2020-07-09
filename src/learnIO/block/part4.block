@@ -1,0 +1,16 @@
+    
+        // 起始位置和实际大小
+        int beginPos = 5;
+        int len = -1;
+        byte[] flush = new byte[blockSize];
+        int i=0;
+        raf.seek(beginPos);
+        while((len=raf.read(flush))!=-1) {
+            System.out.println(i+"-->"+(i*blockSize+beginPos)+"-->"+(i*blockSize+beginPos+len));
+//            System.out.println(new String(flush, 0, len));
+            i++;
+        }
+        raf.close();
+    }
+}
+   

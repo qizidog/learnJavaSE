@@ -1,0 +1,11 @@
+    RandomAccessFile randf = new RandomAccessFile(new File("src/learnIO/print.txt"), "r");
+        int begin = 2;
+        int actualSize = 22;
+        randf.seek(begin); // 指定起始位置，读取剩余全部内容
+        
+        byte[] flush = new byte[12];
+        int len=-1;
+        while((len=randf.read(flush))!=-1) {
+            if(actualSize>len) {
+                System.out.println(new String(flush, 0, len));
+                actualSize
