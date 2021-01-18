@@ -13,7 +13,6 @@ public class TestBlockSleep {
     }
     
     public static void countdown() throws InterruptedException {
-        int num = 10;
         long cur = System.currentTimeMillis();
         Date endTime = new Date(cur+1000*10);
         while (true) {

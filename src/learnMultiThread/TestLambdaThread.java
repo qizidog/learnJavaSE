@@ -19,7 +19,6 @@ public class TestLambdaThread {
                 }
             }
         }
-        
     }
     
     public static void main(String[] args) {
@@ -34,7 +33,7 @@ public class TestLambdaThread {
             }
         }
         
-        // 调用内部类
+        // 调用静态内部类
         new Thread(new Test()).start();
         
         // 调用局部内部类

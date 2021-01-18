@@ -54,7 +54,6 @@ interface Love{
 class ILove implements Love{
     public int lambda(int a) {
         return a+10;
-        
     }
 }
 

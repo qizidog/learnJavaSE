@@ -14,12 +14,11 @@ public class TerminateThread implements Runnable{
         int i = 0;
         while(flag) {
             System.out.println(i++);
-//            try {
-//                Thread.currentThread().sleep(10);
-//            } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
-//                e.printStackTrace();
-//            }
+           try {
+               Thread.currentThread().sleep(10);
+           } catch (InterruptedException e) {
+               e.printStackTrace();
+           }
         }
         
     }
@@ -45,7 +44,7 @@ public class TerminateThread implements Runnable{
         TerminateThread tt = new TerminateThread();
         new Thread(tt).start();
         
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 50; i++) {
             System.out.println("main "+i);
         }
         tt.set_flag(false);
@@ -58,7 +57,6 @@ public class TerminateThread implements Runnable{
         try {
             Thread.currentThread().sleep(1000);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         

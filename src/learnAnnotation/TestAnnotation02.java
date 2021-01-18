@@ -23,7 +23,7 @@ public class TestAnnotation02 {
             
             // 获得类的指定的注解
             MyTableAnnotation ta = (MyTableAnnotation) claz.getAnnotation(MyTableAnnotation.class);
-            System.out.println(ta.value());
+            System.out.println("ta.value():"+ta.value());
             
             // 获得类的属性的注解
             Field f = claz.getDeclaredField("name");
