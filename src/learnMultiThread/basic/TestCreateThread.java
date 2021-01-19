@@ -1,10 +1,8 @@
-package learnMultiThread;
+package learnMultiThread.basic;
 
 import java.io.File;
-import java.net.URL;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;

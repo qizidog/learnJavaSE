@@ -1,4 +1,4 @@
-package learnMultiThread;
+package learnMultiThread.basic;
 
 public class Web12306 implements Runnable{
     private int num = 10;  // 共享变量

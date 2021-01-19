@@ -1,4 +1,4 @@
-package learnMultiThread;
+package learnMultiThread.basic;
 
 public class TestYield {
     public static void main(String[] args) {

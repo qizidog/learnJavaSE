@@ -1,4 +1,4 @@
-package learnMultiThread;
+package learnMultiThread.basic;
 
 public class RabbitTurtle implements Runnable{
     private int total = 20;

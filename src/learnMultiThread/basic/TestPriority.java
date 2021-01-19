@@ -1,4 +1,4 @@
-package learnMultiThread;
+package learnMultiThread.basic;
 
 /**
  * @author qizidog
